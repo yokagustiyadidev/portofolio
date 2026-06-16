@@ -145,6 +145,10 @@ nav {
 .feat-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 10px; transform: translateZ(20px); }
 .feat-desc { color: var(--muted); font-size: 14px; transform: translateZ(10px); }
 
+/* Tech Stack Specific */
+.tech-container { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; transform: translateZ(20px); }
+.tech-badge { padding: 8px 16px; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: 12px; font-size: 14px; font-weight: 500; color: var(--text); }
+
 /* ── ANIMATIONS ──────────────────────────────────────── */
 @keyframes shine { 0% { background-position: 200% center; } 100% { background-position: -200% center; } }
 @keyframes scrollMarquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
@@ -227,8 +231,8 @@ nav {
     </div>
     <div class="nav-links">
       <a href="#about" class="hover-target">Ikhtisar</a>
+      <a href="#tech" class="hover-target">Tech Stack</a>
       <a href="#work" class="hover-target">Proyek</a>
-      <a href="#system" class="hover-target">Sistem CBT</a>
     </div>
   </div>
 </nav>
@@ -252,7 +256,6 @@ nav {
     <div class="marquee-item">Prompt Engineering</div>
     <div class="marquee-item">AI Integration</div>
     <div class="marquee-item">RBAC Security</div>
-    <!-- Duplicate for infinite effect -->
     <div class="marquee-item">Web Development</div>
     <div class="marquee-item">Tailwind CSS</div>
     <div class="marquee-item">Vanilla JS</div>
@@ -273,7 +276,7 @@ nav {
       <div class="widget-card hover-target">
         <h3 class="p-title">Staff Administrasi & IT Support</h3>
         <p class="p-subtitle">Posisi saat ini : SDI Abu Seno</p>
-        <p style="color: var(--muted); margin-bottom: 24px; line-height: 1.6;">Lulusan SMK yang berdedikasi menciptakan solusi ekosistem sekolah dan bisnis. Tidak ada framework yang terlalu berat, tidak ada bug yang tidak bisa dilacak.</p>
+        <p style="color: var(--muted); margin-bottom: 24px; line-height: 1.6;">Berlatar belakang pendidikan teknis SMK, latar belakang teknis saya membentuk saya menjadi pengembang yang praktis, cepat beradaptasi, dan selalu mengutamakan performa sistem. Saya berdedikasi untuk mentransformasi alur kerja manual menjadi ekosistem digital yang otonom dan efisien.</p>
         <ul class="p-list">
           <li><span>Lahir:</span> Bandung, 18 Agustus 1998</li>
           <li><span>Kontak:</span> 0882-0165-94700</li>
@@ -284,22 +287,39 @@ nav {
   </div>
 </section>
 
+<!-- Tech Stack Section (NEW) -->
+<section id="tech" style="padding-top: 0;">
+  <div class="wrap">
+    <h2 class="sec-title">Tech Stack & Tools.</h2>
+    <div class="widget-card" style="text-align: center;">
+      <p style="color: var(--muted); margin-bottom: 20px;">Teknologi yang saya gunakan untuk menghadirkan solusi digital yang efisien:</p>
+      <div class="tech-container" style="justify-content: center;">
+        <span class="tech-badge">JavaScript (Node.js)</span>
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Tailwind CSS</span>
+        <span class="tech-badge">MySQL / PostgreSQL</span>
+        <span class="tech-badge">OpenAI API / Gemini API / Groq API</span>
+        <span class="tech-badge">RBAC Security</span>
+        <span class="tech-badge">Git & Version Control</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Portfolio Section -->
 <section id="work">
   <div class="wrap">
     <h2 class="sec-title">Project Selesai</h2>
     <div class="grid-2">
-      <!-- Project 1 -->
       <div class="widget-card hover-target">
         <div class="port-img-wrap"><img src="46221.jpg" alt="Atomic Tech"></div>
         <h3 style="font-size: 1.5rem; transform: translateZ(30px);">Atomic Tech Web</h3>
         <p style="color: var(--muted); margin-top: 8px; transform: translateZ(20px);">Infrastruktur web untuk manajemen servis dengan AI Assistant via WhatsApp. Mampu men-generate invoice otonom.</p>
         <div class="port-tags">
-          <span class="tag">AI Chatbot</span>
+          <span class="tag">Whatsapp AI Assistant</span>
           <span class="tag">Web Dashboard</span>
         </div>
       </div>
-      <!-- Project 2 -->
       <div class="widget-card hover-target" onclick="window.open('https://drive.google.com/drive/folders/1K34zxs3n6lYajXO1cHwfABLwAKdx38zK', '_blank')" style="cursor: pointer;">
         <div class="port-img-wrap"><img src="45.jpg" alt="Sistem CBT"></div>
         <h3 style="font-size: 1.5rem; transform: translateZ(30px);">Sistem CBT Terintegrasi</h3>
