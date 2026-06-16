@@ -59,6 +59,24 @@ nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 56px; }
+/* Style untuk titik kontrol jendela */
+.window-controls {
+  display: flex;
+  gap: 6px;
+  margin-right: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background-color: #FF5F56; }
+.yellow { background-color: #FFBD2E; }
+.green { background-color: #27C93F; }
+
 .nav-logo { font-family: var(--font-head); font-weight: 600; font-size: 1.1rem; color: #FFF; display: flex; align-items: center; gap: 6px; }
 .nav-logo svg { width: 16px; height: 16px; fill: currentColor; }
 .nav-links { display: flex; gap: 28px; }
@@ -223,12 +241,15 @@ nav {
 <!-- Background Particles -->
 <canvas id="particle-canvas"></canvas>
 
-<!-- Navbar -->
-<nav>
-  <div class="wrap nav-inner">
-    <div class="nav-logo">
+<!-- Navbar Logo yang telah diperbarui -->
+<div class="nav-logo">
+  <div class="window-controls">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+  </div>
   Portofolio 
-    </div>
+</div>
     <div class="nav-links">
       <a href="#about" class="hover-target">Ikhtisar</a>
       <a href="#tech" class="hover-target">Tech Stack</a>
